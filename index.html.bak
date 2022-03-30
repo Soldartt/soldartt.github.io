@@ -45,8 +45,7 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-8 col-lg-10">
                         <div class="header-content text-center">
-                            <img src="assets/images/logo.png" width="500"><br>
-							<img src="assets/images/iso9001.png" width="100">
+                            <img src="assets/images/logo.png" width="500">
                             <ul class="header-btn">
                                 <li><a class="main-btn btn-one" href="#"><i class="lni-whatsapp"></i> Whatsapp</a></li>
 
