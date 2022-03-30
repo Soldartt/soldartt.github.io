@@ -45,7 +45,8 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-8 col-lg-10">
                         <div class="header-content text-center">
-                            <img src="assets/images/logo.png" width="500">
+                            <img src="assets/images/logo.png" width="500"><br>
+							<img src="assets/images/iso9001.png" width="100">
                             <ul class="header-btn">
                                 <li><a class="main-btn btn-one" href="#"><i class="lni-whatsapp"></i> Whatsapp</a></li>
 
@@ -191,7 +192,7 @@ background: linear-gradient(128deg, rgba(2,0,36,1) 0%, rgba(62,75,120,1) 35%, rg
 						<hr>
 						<p><a href="mailto:metalurgicasoldartt@gmail.com"><font color="#fff"><i class="lni-envelope"></i> metalurgicasoldartt@gmail.com </font></a></p>
 						<hr>
-						<a href="mailto:metalurgicasoldartt@gmail.com"><font color="#fff"><i class="lni-pin"></i> Rua Luiz Gubert 131, B. Santa Catarina<br>Caxias do Sul - RS </font></a></p>
+						<a href="https://www.google.com/maps/place/R.+Luiz+Gubert,+131+-+Santa+Catarina,+Caxias+do+Sul+-+RS/@-29.1547937,-51.2249714,17z/data=!3m1!4b1!4m5!3m4!1s0x951ea26041b0575f:0x88cca1a24324e230!8m2!3d-29.1547937!4d-51.2227827" target="_blank"><font color="#fff"><i class="lni-pin"></i> Rua Luiz Gubert 131, B. Santa Catarina<br>Caxias do Sul - RS </font></a></p>
                     </div> <!-- slider-content -->
                 </div>
             </div> <!-- row -->
