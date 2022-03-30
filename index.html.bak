@@ -47,7 +47,7 @@
                         <div class="header-content text-center">
                             <img src="assets/images/logo.png" width="500">
                             <ul class="header-btn">
-                                <li><a class="main-btn btn-one" href="#"><i class="lni-whatsapp"></i> Whatsapp</a></li>
+                                <li><a class="main-btn btn-one" <a href="https://api.whatsapp.com/send?phone=5554991025394&text=Ol%C3%A1%20..." target="_blank"><i class="lni-whatsapp"></i> Whatsapp</a></li>
 
                             </ul>
                         </div> <!-- header content -->
@@ -61,18 +61,40 @@
     </header>
 
     <!--====== HEADER PART ENDS ======-->
-
-
+<div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center pb-10">
+                        <h2>Política da Qualidade SOLDARTT</h2>
+                        <p class="text">Ter excelência no atendimento ao cliente, suprindo todas as necessidades e expectativas das partes interessadas, atuando sempre na melhoria contínua com foco no crescimento e garantia da Qualidade SOLDARTT</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+		</div>
+<br>
+<br>
     <!--====== PRICING PART START ======-->
 
 
 
-    <section id="pricing" class="pricing-area">
+    <section id="pricing" class="pricing-area"  style=" /* The background image */
+  background-image: url('assets/images/services-bg.jpg');
+
+  
+
+  /* Center the background image */
+  background-position: top;
+
+  /* Set the background image to no repeat */
+  background-repeat: no-repeat;
+
+  /* Scale the background image to be as large as possible */
+  background-size: cover;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-title text-center pb-10">
-                        <h4 class="title">Nossos Serviços</h4>
+                        <h2><font color="#fff">Nossos Serviços</font></h2>
                         <p class="text">Caso tenha dúvidas, entre em contato!</p>
                     </div> <!-- section title -->
                 </div>
