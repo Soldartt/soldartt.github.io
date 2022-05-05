@@ -64,7 +64,7 @@
 	<section class="pricing-area">
 	<div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-6">
+                <div class="col-lg-8">
                     <div class="section-title text-center pb-10">
                         <h2>Quem Somos</h2>
                         <p class="text">A SOLDARTT é uma empresa que presta serviços na área de solda em geral. Com atendimento para todo o Estado do Rio Grande do Sul, a empresa busca suprir as demandas com qualidade e pontualidade. Por isso, conta com uma equipe especializada e uma infraestrutura enxuta e eficiente para proporcionar o melhor para os clientes.
@@ -80,7 +80,7 @@ A busca da Certificação ISO 9001:2015 fortaleceu o compromisso com a qualidade
 	
 <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-6">
+                <div class="col-lg-8">
                     <div class="section-title text-center pb-10">
                         <h2>Política da Qualidade SOLDARTT</h2>
                         <p class="text">Ter excelência no atendimento ao cliente, suprindo todas as necessidades e expectativas das partes interessadas, como também, requisitos aplicáveis, atuando sempre na melhoria contínua com foco no crescimento e garantia da Qualidade SOLDARTT</p>
