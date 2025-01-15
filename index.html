@@ -38,6 +38,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
 <style>
+/* Estilos da galeria */
 .gallery {
     padding: 20px;
     text-align: center;
@@ -63,11 +64,51 @@
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .gallery-item:hover {
     transform: scale(1.05);
-}</style>
+}
+
+/* Estilos do popup */
+.image-popup {
+    display: none; /* Oculto por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.image-popup img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.image-popup .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.image-popup .close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+</style>
 </head>
 
 <body>
@@ -230,32 +271,57 @@ A busca da Certificação ISO 9001:2015 fortaleceu o compromisso com a qualidade
         </div> <!-- conteiner -->
     </section>
 <section class="gallery">
-        <h2>Galeria de Imagens</h2>
-        <div class="gallery-grid" id="gallery-grid">
-            <!-- As imagens serão carregadas aqui via JavaScript -->
-        </div>
-    </section>
+    <h2>Galeria de Imagens</h2>
+    <div class="gallery-grid" id="gallery-grid">
+        <!-- As imagens serão carregadas aqui via JavaScript -->
+    </div>
+</section>
 
-    <script>
-        // Lista com os nomes das imagens (ajuste os nomes conforme necessário)
-        const images = [
-            '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg',
-            '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg', '16.jpg', '17.jpg', '18.jpg', '19.jpg',
-            '20.jpg', '21.jpg', '23.jpg', '24.jpg', '25.jpg', '26.jpg', '27.jpg', '28.jpg',
-            '29.jpg', '30.jpg', '31.jpg', '32.jpg', '33.jpg', '34.jpg', '35.jpg', '36.jpg', '37.jpg'
-        ];
+<!-- Popup para a imagem ampliada -->
+<div class="image-popup" id="image-popup">
+    <span class="close-btn" id="close-btn">&times;</span>
+    <img id="popup-img" src="" alt="Imagem Ampliada">
+</div>
 
-        // Função para carregar as imagens no grid
-        const galleryGrid = document.getElementById('gallery-grid');
-        
-        images.forEach(image => {
-            const imgElement = document.createElement('img');
-            imgElement.src = `assets/galeria/${image}`;
-            imgElement.alt = `Imagem ${image}`;
-            imgElement.classList.add('gallery-item');
-            galleryGrid.appendChild(imgElement);
+<script>
+    // Lista de imagens
+    const images = [
+        '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg',
+        '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg', '16.jpg', '17.jpg', '18.jpg', '19.jpg',
+        '20.jpg', '21.jpg', '23.jpg', '24.jpg', '25.jpg', '26.jpg', '27.jpg', '28.jpg',
+        '29.jpg', '30.jpg', '31.jpg', '32.jpg', '33.jpg', '34.jpg', '35.jpg', '36.jpg', '37.jpg'
+    ];
+
+    const galleryGrid = document.getElementById('gallery-grid');
+    const popup = document.getElementById('image-popup');
+    const popupImg = document.getElementById('popup-img');
+    const closeBtn = document.getElementById('close-btn');
+
+    // Carregar imagens na galeria
+    images.forEach(image => {
+        const imgElement = document.createElement('img');
+        imgElement.src = `assets/galeria/${image}`;
+        imgElement.alt = `Imagem ${image}`;
+        imgElement.classList.add('gallery-item');
+        imgElement.addEventListener('click', () => {
+            popupImg.src = imgElement.src;
+            popup.style.display = 'flex';
         });
-    </script>
+        galleryGrid.appendChild(imgElement);
+    });
+
+    // Fechar o popup
+    closeBtn.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+
+    // Fechar o popup ao clicar fora da imagem
+    popup.addEventListener('click', (e) => {
+        if (e.target === popup) {
+            popup.style.display = 'none';
+        }
+    });
+</script>
 
     <!--====== PRICING PART ENDS ======-->
     
